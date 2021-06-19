@@ -11,3 +11,7 @@ export type ColorShade =
   | 900;
 
 export type ColorPalette = Record<ColorShade, string>;
+
+export type FontWeight = 'normal' | 'medium' | 'semibold' | 'bold';
+
+export type FontWeightPalette = Record<FontWeight, number>;
