@@ -1,5 +1,8 @@
 import type { FontWeight, FontWeightPalette } from '@/types';
 
+/**
+ * Font weight scale
+ */
 const fontWeightPalette: FontWeightPalette = {
   normal: 400,
   medium: 500,

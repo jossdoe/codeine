@@ -14,7 +14,7 @@ export type ColorPalette = Record<ColorShade, string>;
 
 export type FontWeight = 'normal' | 'medium' | 'semibold' | 'bold';
 
-export type FontWeightPalette = Record<FontWeight, number>;
+export type FontWeightScale = Record<FontWeight, number>;
 
 export type Space =
   | 0
@@ -39,4 +39,4 @@ export type Space =
   | 1280
   | 1600;
 
-export type SpacePalette = Record<Space, string>;
+export type SpaceScale = Record<Space, string>;

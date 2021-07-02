@@ -4,8 +4,12 @@
  * 
  * Pure colors are 400
  */
+
 import type { ColorPalette, ColorShade } from '@/types';
 
+/**
+ * Primary and neutral color palettes
+ */
 const primaryPalette: ColorPalette = {
   50: '#efe6ff',
   100: '#d4c3fe',
@@ -40,6 +44,9 @@ export function gray(shade: ColorShade): string {
   return grayPalette[shade];
 }
 
+/**
+ * Functional color palettes
+ */
 const redPalette: ColorPalette = {
   50: '#FFF5F5',
   100: '#FED7D7',

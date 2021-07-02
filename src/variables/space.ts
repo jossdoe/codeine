@@ -1,8 +1,8 @@
-import type { Space, SpacePalette } from '@/types';
+import type { Space, SpaceScale } from '@/types';
 
 const rem = (key: Space) => `${key / 16}rem`;
 
-const spacePalette: SpacePalette = {
+const spacePalette: SpaceScale = {
   0: rem(0),
   4: rem(4),
   8: rem(8),
