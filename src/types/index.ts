@@ -15,3 +15,28 @@ export type ColorPalette = Record<ColorShade, string>;
 export type FontWeight = 'normal' | 'medium' | 'semibold' | 'bold';
 
 export type FontWeightPalette = Record<FontWeight, number>;
+
+export type Space =
+  | 0
+  | 4
+  | 8
+  | 12
+  | 16
+  | 24
+  | 32
+  | 48
+  | 64
+  | 80
+  | 96
+  | 128
+  | 160
+  | 240
+  | 320
+  | 480
+  | 640
+  | 800
+  | 960
+  | 1280
+  | 1600;
+
+export type SpacePalette = Record<Space, string>;
