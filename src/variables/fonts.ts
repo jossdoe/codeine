@@ -1,9 +1,9 @@
-import type { FontWeight, FontWeightPalette } from '@/types';
+import type { FontWeight, FontWeightScale } from '@/types';
 
 /**
  * Font weight scale
  */
-const fontWeightPalette: FontWeightPalette = {
+const fontWeightPalette: FontWeightScale = {
   normal: 400,
   medium: 500,
   semibold: 600,
