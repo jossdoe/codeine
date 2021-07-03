@@ -16,6 +16,20 @@ export type FontWeight = 'normal' | 'medium' | 'semibold' | 'bold';
 
 export type FontWeightScale = Record<FontWeight, number>;
 
+export type FontSizeCategory =
+  | 'body'
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'paragraph'
+  | 'small';
+
+export type FontSize = 16 | 48 | 40 | 32 | 24 | 20 | 16 | 12;
+
+export type FontSizeScale = Record<FontSizeCategory, FontSize>;
+
 export type Space =
   | 0
   | 4
