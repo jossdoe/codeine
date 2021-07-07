@@ -1,4 +1,9 @@
-import type { FontWeight, FontWeightScale, FontSizeScale, FontSizeCategory } from '@/types';
+import {
+  FontWeight,
+  FontWeightScale,
+  FontSizeScale,
+  FontSizeCategory,
+} from '@/types';
 import { pxToRem } from '@/utils';
 
 /**
@@ -20,7 +25,7 @@ const fontWeightScale: FontWeightScale = {
   medium: 500,
   semibold: 600,
   bold: 700,
-}
+};
 
 export function fontWeight(weight: FontWeight) {
   return fontWeightScale[weight];
@@ -42,7 +47,7 @@ const fontSizeScale: FontSizeScale = {
 
 export function fontSize(category: FontSizeCategory) {
   return pxToRem(fontSizeScale[category]);
-};
+}
 
 /**
  * Line height

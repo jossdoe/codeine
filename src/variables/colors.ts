@@ -1,11 +1,11 @@
 /**
  * Functional color values are based on the defaults by Chakra UI
  * https://chakra-ui.com/docs/theming/theme
- * 
+ *
  * Pure colors are 400
  */
 
-import type { ColorPalette, ColorShade } from '@/types';
+import { ColorPalette, ColorShade } from '@/types';
 
 /**
  * Primary and neutral color palettes
@@ -58,7 +58,7 @@ const redPalette: ColorPalette = {
   700: '#9B2C2C',
   800: '#822727',
   900: '#63171B',
-}
+};
 
 export function red(shade: ColorShade): string {
   return redPalette[shade];
@@ -75,7 +75,7 @@ const yellowPalette: ColorPalette = {
   700: '#975A16',
   800: '#744210',
   900: '#5F370E',
-}
+};
 
 export function yellow(shade: ColorShade): string {
   return yellowPalette[shade];
@@ -92,7 +92,7 @@ const greenPalette: ColorPalette = {
   700: '#276749',
   800: '#22543D',
   900: '#1C4532',
-}
+};
 
 export function green(shade: ColorShade): string {
   return greenPalette[shade];
@@ -109,7 +109,7 @@ const bluePalette: ColorPalette = {
   700: '#2C5282',
   800: '#2A4365',
   900: '#1A365D',
-}
+};
 
 export function blue(shade: ColorShade): string {
   return bluePalette[shade];
