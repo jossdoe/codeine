@@ -23,7 +23,7 @@ const primaryPalette: ColorPalette = {
   900: '#0000e7',
 };
 
-export function primary(shade: ColorShade): string {
+function primary(shade: ColorShade): string {
   return primaryPalette[shade];
 }
 
@@ -40,7 +40,7 @@ const grayPalette: ColorPalette = {
   900: '#171923',
 };
 
-export function gray(shade: ColorShade): string {
+function gray(shade: ColorShade): string {
   return grayPalette[shade];
 }
 
@@ -60,7 +60,7 @@ const redPalette: ColorPalette = {
   900: '#63171B',
 };
 
-export function red(shade: ColorShade): string {
+function red(shade: ColorShade): string {
   return redPalette[shade];
 }
 
@@ -77,7 +77,7 @@ const yellowPalette: ColorPalette = {
   900: '#5F370E',
 };
 
-export function yellow(shade: ColorShade): string {
+function yellow(shade: ColorShade): string {
   return yellowPalette[shade];
 }
 
@@ -94,7 +94,7 @@ const greenPalette: ColorPalette = {
   900: '#1C4532',
 };
 
-export function green(shade: ColorShade): string {
+function green(shade: ColorShade): string {
   return greenPalette[shade];
 }
 
@@ -111,6 +111,15 @@ const bluePalette: ColorPalette = {
   900: '#1A365D',
 };
 
-export function blue(shade: ColorShade): string {
+function blue(shade: ColorShade): string {
   return bluePalette[shade];
 }
+
+export const colors = {
+  primary,
+  gray,
+  red,
+  yellow,
+  green,
+  blue,
+};
