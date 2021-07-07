@@ -1,5 +1,7 @@
 import { Space, SpaceScale } from '@/types';
-import { pxToRem } from '@/utils';
+import { utils } from '@/utils';
+
+const { pxToRem } = utils;
 
 const spacePalette: SpaceScale = {
   0: 0,

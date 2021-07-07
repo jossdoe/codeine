@@ -8,7 +8,9 @@ import {
   LineHeightMap,
   LineHeightCategory,
 } from '@/types';
-import { pxToRem } from '@/utils';
+import { utils } from '@/utils';
+
+const { pxToRem } = utils;
 
 /**
  * Font family
