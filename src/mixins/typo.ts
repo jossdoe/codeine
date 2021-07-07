@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { fontFamily, fontSize, fontWeight, lineHeight } from '@/variables/typo';
+import { variables } from '@/variables';
 import {
   FontFamilyCategory,
   FontSizeCategory,
@@ -7,28 +7,30 @@ import {
   LineHeightCategory,
 } from '@/types';
 
+const { fontFamily, fontSize, fontWeight, lineHeight } = variables.typo;
+
 /**
  * Utilities
  */
-export function applyFontFamily(category: FontFamilyCategory) {
+function applyFontFamily(category: FontFamilyCategory) {
   return css`
     font-family: ${fontFamily(category)};
   `;
 }
 
-export function applyFontSize(category: FontSizeCategory) {
+function applyFontSize(category: FontSizeCategory) {
   return css`
     font-family: ${fontSize(category)};
   `;
 }
 
-export function applyFontWeight(weight: FontWeight) {
+function applyFontWeight(weight: FontWeight) {
   return css`
     font-weight: ${fontWeight(weight)};
   `;
 }
 
-export function applyLineHeight(category: LineHeightCategory) {
+function applyLineHeight(category: LineHeightCategory) {
   return css`
     font-weight: ${lineHeight(category)};
   `;
@@ -90,13 +92,21 @@ const small = css`
   ${applyFontSize('small')};
 `;
 
-export const variants = {
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  paragraph,
-  small,
+export const typo = {
+  utils: {
+    applyFontFamily,
+    applyFontSize,
+    applyFontWeight,
+    applyLineHeight,
+  },
+  variants: {
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    paragraph,
+    small,
+  },
 };

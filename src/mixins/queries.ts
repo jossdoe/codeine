@@ -1,7 +1,7 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components';
 import { breakpoints } from '@/variables/breakpoints';
 
-export function untilMobile(
+function untilMobile(
   styles: FlattenSimpleInterpolation
 ): FlattenSimpleInterpolation {
   return css`
@@ -11,7 +11,7 @@ export function untilMobile(
   `;
 }
 
-export function fromTablet(
+function fromTablet(
   styles: FlattenSimpleInterpolation
 ): FlattenSimpleInterpolation {
   return css`
@@ -21,7 +21,7 @@ export function fromTablet(
   `;
 }
 
-export function untilTablet(
+function untilTablet(
   styles: FlattenSimpleInterpolation
 ): FlattenSimpleInterpolation {
   return css`
@@ -31,7 +31,7 @@ export function untilTablet(
   `;
 }
 
-export function fromDesktop(
+function fromDesktop(
   styles: FlattenSimpleInterpolation
 ): FlattenSimpleInterpolation {
   return css`
@@ -40,3 +40,10 @@ export function fromDesktop(
     }
   `;
 }
+
+export const queries = {
+  untilMobile,
+  fromTablet,
+  untilTablet,
+  fromDesktop,
+};

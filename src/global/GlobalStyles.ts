@@ -1,7 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import { gray } from '@/variables/colors';
-import { variants } from '@/mixins/typo';
+import { mixins } from '@/mixins';
+import { variables } from '@/variables';
+
+const { body } = mixins.typo.variants;
+const { gray } = variables.colors;
 
 export const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -17,8 +20,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    ${body}
     color: ${gray(700)};
-    ${variants.body}
   }
 
   a, a:visited {
