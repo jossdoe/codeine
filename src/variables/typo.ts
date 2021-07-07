@@ -8,7 +8,9 @@ import {
   LineHeightMap,
   LineHeightCategory,
 } from '@/types';
-import { pxToRem } from '@/utils';
+import { utils } from '@/utils';
+
+const { pxToRem } = utils;
 
 /**
  * Font family
@@ -17,7 +19,7 @@ const fontFamilies: FontFamilyMap = {
   default: "'Inter', sans-serif",
 };
 
-export function fontFamily(category: FontFamilyCategory) {
+function fontFamily(category: FontFamilyCategory) {
   return fontFamilies[category];
 }
 
@@ -31,7 +33,7 @@ const fontWeightScale: FontWeightScale = {
   bold: 700,
 };
 
-export function fontWeight(weight: FontWeight) {
+function fontWeight(weight: FontWeight) {
   return fontWeightScale[weight];
 }
 
@@ -49,7 +51,7 @@ const fontSizeScale: FontSizeScale = {
   small: 12,
 };
 
-export function fontSize(category: FontSizeCategory) {
+function fontSize(category: FontSizeCategory) {
   return pxToRem(fontSizeScale[category]);
 }
 
@@ -60,6 +62,8 @@ const lineHeights: LineHeightMap = {
   default: 1.5,
 };
 
-export function lineHeight(category: LineHeightCategory) {
+function lineHeight(category: LineHeightCategory) {
   return lineHeights[category];
 }
+
+export const typo = { fontFamily, fontWeight, fontSize, lineHeight };

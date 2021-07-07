@@ -70,4 +70,4 @@ export type Space =
   | 1280
   | 1600;
 
-export type SpaceScale = Record<Space, string>;
+export type SpaceScale = Record<Space, number>;
