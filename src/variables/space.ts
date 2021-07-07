@@ -1,5 +1,5 @@
-import { Space, SpaceScale } from '@/types';
-import { utils } from '@/utils';
+import { Space, SpaceScale } from '../types';
+import { utils } from '../utils';
 
 const { pxToRem } = utils;
 

@@ -7,8 +7,8 @@ import {
   FontFamilyCategory,
   LineHeightMap,
   LineHeightCategory,
-} from '@/types';
-import { utils } from '@/utils';
+} from '../types';
+import { utils } from '../utils';
 
 const { pxToRem } = utils;
 

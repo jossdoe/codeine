@@ -1,5 +1,5 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components';
-import { breakpoints } from '@/variables/breakpoints';
+import { breakpoints } from '../variables/breakpoints';
 
 function untilMobile(
   styles: FlattenSimpleInterpolation

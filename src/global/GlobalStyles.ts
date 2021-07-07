@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import { mixins } from '@/mixins';
-import { variables } from '@/variables';
+import { mixins } from '../mixins';
+import { variables } from '../variables';
 
 const { body } = mixins.typo.variants;
 const { gray } = variables.colors;

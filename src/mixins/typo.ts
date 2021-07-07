@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
-import { variables } from '@/variables';
+import { variables } from '../variables';
 import {
   FontFamilyCategory,
   FontSizeCategory,
   FontWeight,
   LineHeightCategory,
-} from '@/types';
+} from '../types';
 
 const { fontFamily, fontSize, fontWeight, lineHeight } = variables.typo;
 

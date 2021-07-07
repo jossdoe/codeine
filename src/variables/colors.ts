@@ -5,7 +5,7 @@
  * Pure colors are 400
  */
 
-import { ColorPalette, ColorShade } from '@/types';
+import { ColorPalette, ColorShade } from '../types';
 
 /**
  * Primary and neutral color palettes
