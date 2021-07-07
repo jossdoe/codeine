@@ -1,3 +1,6 @@
+/**
+ * Colors
+ */
 export type ColorShade =
   | 50
   | 100
@@ -11,6 +14,13 @@ export type ColorShade =
   | 900;
 
 export type ColorPalette = Record<ColorShade, string>;
+
+/**
+ * Typography
+ */
+export type FontFamilyCategory = 'default';
+
+export type FontFamilyMap = Record<FontFamilyCategory, string>;
 
 export type FontWeight = 'normal' | 'medium' | 'semibold' | 'bold';
 
@@ -30,6 +40,13 @@ export type FontSize = 16 | 48 | 40 | 32 | 24 | 20 | 16 | 12;
 
 export type FontSizeScale = Record<FontSizeCategory, FontSize>;
 
+export type LineHeightCategory = 'default';
+
+export type LineHeightMap = Record<LineHeightCategory, number>;
+
+/**
+ * Utilities
+ */
 export type Space =
   | 0
   | 4

@@ -3,17 +3,21 @@ import {
   FontWeightScale,
   FontSizeScale,
   FontSizeCategory,
+  FontFamilyMap,
+  FontFamilyCategory,
+  LineHeightMap,
+  LineHeightCategory,
 } from '@/types';
 import { pxToRem } from '@/utils';
 
 /**
  * Font family
  */
-const fontFamilies = {
+const fontFamilies: FontFamilyMap = {
   default: "'Inter', sans-serif",
 };
 
-export function fontFamily(category: keyof typeof fontFamilies) {
+export function fontFamily(category: FontFamilyCategory) {
   return fontFamilies[category];
 }
 
@@ -52,10 +56,10 @@ export function fontSize(category: FontSizeCategory) {
 /**
  * Line height
  */
-const lineHeights = {
+const lineHeights: LineHeightMap = {
   default: 1.5,
 };
 
-export function lineHeight(category: keyof typeof lineHeights) {
+export function lineHeight(category: LineHeightCategory) {
   return lineHeights[category];
 }
