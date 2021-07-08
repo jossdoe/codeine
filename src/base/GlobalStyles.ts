@@ -9,8 +9,6 @@ const { gray } = variables.colors;
 export const GlobalStyles = createGlobalStyle`
   ${reset}
 
-  @import url('https://fonts.googleapis.com/css?family=Inter:400');
-
   *,
   *::before,
   *::after {
