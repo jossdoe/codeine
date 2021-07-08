@@ -1,5 +1,5 @@
 import { GlobalStyles } from './GlobalStyles';
 
-export const global = {
+export const base = {
   GlobalStyles,
 };
