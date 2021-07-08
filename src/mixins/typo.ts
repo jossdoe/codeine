@@ -20,7 +20,7 @@ function applyFontFamily(category: FontFamilyCategory) {
 
 function applyFontSize(category: FontSizeCategory) {
   return css`
-    font-family: ${fontSize(category)};
+    font-size: ${fontSize(category)};
   `;
 }
 
@@ -32,7 +32,7 @@ function applyFontWeight(weight: FontWeight) {
 
 function applyLineHeight(category: LineHeightCategory) {
   return css`
-    font-weight: ${lineHeight(category)};
+    line-height: ${lineHeight(category)};
   `;
 }
 
