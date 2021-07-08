@@ -3,8 +3,9 @@ import reset from 'styled-reset';
 import { mixins } from '../mixins';
 import { variables } from '../variables';
 
-const { body } = mixins.typo.variants;
-const { gray } = variables.colors;
+const { body, h1, h2, h3, h4, h5, paragraph, small } = mixins.typo.variants;
+const { applyFontWeight } = mixins.typo.utils;
+const { gray, primary } = variables.colors;
 
 export const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -19,11 +20,42 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     ${body}
+
     color: ${gray(700)};
   }
 
   a, a:visited {
-    color: inherit;
+    ${applyFontWeight('semibold')}
+
+    color: ${primary(400)};
     text-decoration: inherit;
+  }
+
+  h1 {
+    ${h1}
+  }
+
+  h2 {
+    ${h2}
+  }
+
+  h3 {
+    ${h3}
+  }
+
+  h4 {
+    ${h4}
+  }
+
+  h5 {
+    ${h5}
+  }
+
+  p {
+    ${paragraph}
+  }
+
+  small {
+    ${small}
   }
 `;
