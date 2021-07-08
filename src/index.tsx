@@ -1,10 +1,10 @@
-import { global } from './global';
+import { base } from './base';
 import { mixins } from './mixins';
 import { utils } from './utils';
 import { variables } from './variables';
 
 const codeine = {
-  global,
+  base,
   mixins,
   utils,
   variables,
